@@ -1,0 +1,58 @@
+/**index.wxss**/
+.main-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.list-item{
+  height: 57px;
+  width: 100vw;
+  position: relative;
+}
+
+.list-item-img{
+  position:absolute;
+  width: 36px;
+  height: 36px;
+  left: 20px;
+  top:10px;
+}
+
+.list-item-name{
+  position:absolute;
+  font-size: 22px;
+  left: 20px;
+  top: 0px;
+  line-height: 56px;
+}
+
+.list-item-rssi-img{
+  position:absolute;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top:13px;
+}
+
+.list-item-rssi{
+  position:absolute;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+  font-size: 12px;
+  font-weight:bold;
+}
+.list-item-line{
+  position:absolute;
+  height: 1px;
+  /* width: 100vw; */
+  left: 20px;
+  right: 20px;
+  top:56px;
+  background-color: #c6c6c8;
+}
+.gap{
+  width: 100vw;
+  height: 57px;
+}

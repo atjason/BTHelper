@@ -1,0 +1,21 @@
+<!--pages/device.wxml-->
+<view class="device-container">
+  <!-- <text class="title-rev">数据接收 : </text> -->
+  <!-- <button class="bt-clear" type="default" bindtap="btClearTap">清空</button> -->
+  <view class="scroll-view-container" bindlongtap="btClearTap">
+    <scroll-view class="scroll-view-rev" scroll-y="true" scroll-into-view="{{scrollIntoView}}">
+      <view class="view-rev">
+        <text class="text-rev">{{textRevData}}</text>
+      </view>
+      <view id="scroll-view-bottom"></view>
+    </scroll-view>
+  </view>
+  <!-- <text class="title-send">数据发送 : </text> -->
+  <!-- <input class="input-send" bindblur="inputSendData"></input> -->
+  <view class="view-input-send">
+    <textarea class="input-send" maxlength="244" value="{{textInput}}" bindblur="inputSendData" bindinput="inputSendData"/>
+  </view>
+  <view class="view-bt-send">
+    <button class="bt-send" type="primary" bindtap="btSendTap" bindlongtap="showSendHistory">发送</button>
+  </view>
+</view>
